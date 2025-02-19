@@ -3,7 +3,7 @@
 import pandas as pd
 
 # Load dataset
-df = pd.read_csv("C:\\Users\\HP\\Desktop\\Nexford University\\BAN6440- Applied Machine Learning\\Module 5 Assignment\\Mall_Customers.csv")
+df = pd.read_csv("C:\\Users\\HP\\Desktop\\Nexford University\\BAN6440- Applied Machine Learning\\Module 4 Assignment\\Mall_Customers.csv")
 
 # Print the first 5 rows to inspect the data
 print(df.head())
@@ -22,7 +22,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
 # Loading the dataset
-data = pd.read_csv("C:\\Users\\HP\\Desktop\\Nexford University\\BAN6440- Applied Machine Learning\\Module 5 Assignment\\Mall_Customers.csv")  # Assuming your data is in CSV format
+data = pd.read_csv("C:\\Users\\HP\\Desktop\\Nexford University\\BAN6440- Applied Machine Learning\\Module 4 Assignment\\Mall_Customers.csv")  # Assuming your data is in CSV format
 
 # Drop the CustomerID column
 data = data.drop(columns=['CustomerID'])
