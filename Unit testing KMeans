@@ -1,0 +1,16 @@
+# Step 4: Unit Testing
+# testing the result using pytest
+
+import pytest
+from Module 4 Assignment_KMeansClustering import load_data, apply_kmeans
+
+def test_load_data():
+    data = load_data('C:\\Users\\HP\\Desktop\\Nexford University\\BAN6440- Applied Machine Learning\\Module 5 Assignment\\Mall_Customers.csv')
+    assert data is not None
+    assert len(data) > 0  # Ensure data is not empty
+
+def test_kmeans_clustering():
+    data = load_data('C:\\Users\\HP\\Desktop\\Nexford University\\BAN6440- Applied Machine Learning\\Module 5 Assignment\\Mall_Customers.csv')
+    kmeans = apply_kmeans(data, n_clusters=3)
+    assert len(set(kmeans.labels_)) == 3  # Check the number of clusters
+
